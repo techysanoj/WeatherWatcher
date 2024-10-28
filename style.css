@@ -1,0 +1,185 @@
+body{
+    background-image: linear-gradient(to left bottom, #0079ae, #0183bd, #048ccc, #0a96db, #12a0eb);
+    background-size: cover;  /* This makes sure the image covers the entire background */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    /* background-position: center;  Centers the image */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFAF0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
+.hidden-items{
+    display: none;
+    /* opacity: 0; */
+}
+
+
+#search-here{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    height: 30px;
+    width: 300px;
+    display: none;
+    transition: all 1s;
+}
+
+#city-input, #state-input{
+    height: 40px;
+    width: 400px;
+    font-size: 2rem;
+    padding-left: 8%;
+    color: whitesmoke;
+    /* border: none; */
+    /* background-color: #007aae00; */
+    border: #FFA500;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px black;
+}
+
+input[type=text] {
+    color: whitesmoke;
+    background-color: rgba(0, 217, 255, 0.4);
+}
+input::placeholder {
+    color: whitesmoke;
+}
+
+#search-icon {
+    padding: 5%;
+    font-size: 2.5rem;
+    background-color: #0079ae;
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px black;
+    cursor: pointer;
+    
+
+}
+
+#search-icon:hover{
+    background-color: #FFA500;
+    transition: all 1s;
+}
+
+#main-header{
+    font-size: 3.2rem;
+    text-shadow: 2px 4px 0px black;
+}
+
+#search-weather{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#weather-btn{
+    /* margin-right: 20px; */
+    height: 40px;
+    width: 190px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    color: #FFFAF0;
+    border-radius: 10px;
+    background: rgba(83, 83, 83, 0.4);
+    box-shadow: 0px 2px 2px black;
+    cursor: pointer;
+}
+
+#weather-btn:hover{
+    background: #FFA500;
+    /* color: #0079ae; */
+    color: black;
+    box-shadow: 0px 2px 10px white;
+    transition: all 1s;
+} 
+
+#search-weather-btn {
+    /* margin-left: 20px; */
+    height: 39px;
+    width: 190px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    /* color: #FFFAF0; */
+    border-radius: 10px;
+    background: #FFA500;
+    box-shadow: 0px 2px 2px black;
+    cursor: pointer;
+}
+
+#weather-details{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#windspeed-txt, #humidity-txt, #pressure-txt{
+    font-size: 1.3rem;
+    padding: 2%;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #0D47A1;
+    box-shadow: 0px 2px 2px black;
+}
+
+
+#windspeed-txt:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #052e37, #00455f, #005c8c, #0072bc, #1284eb);
+    box-shadow: 0px 0px 15px rgb(0, 247, 255);
+    transition: all 0.5s ease-in;
+} 
+#humidity-txt:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #052e37, #00455f, #005c8c, #0072bc, #1284eb);
+    box-shadow: 0px 0px 15px rgb(0, 247, 255);
+    transition: all 0.5s ease-in;
+}
+#pressure-txt:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #052e37, #00455f, #005c8c, #0072bc, #1284eb);
+    box-shadow: 0px 0px 15px rgb(0, 247, 255);
+    transition: all 0.5s ease-in;
+}
+
+#weather-animation{
+    height: 300px;
+    width: 300px;
+}
+
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none; /* Hidden by default */
+    margin: 20px auto;
+  }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#temp-txt{
+    color: yellow;
+    text-shadow: 0px 3px 0px rgb(0, 0, 0);
+}

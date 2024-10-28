@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWatcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/WeatherWatcher/favicon/favicon-32x32.png">
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <h1 id="main-header">Weather Watcher</h1>
+    <div id="search-weather">
+        <button id="weather-btn" class="">Current Weather</button>
+        <button id="search-weather-btn">Search Location</button>
+    </div>
+
+    <div id="search-here" class="hidden-items">
+        <input type="text" placeholder="Enter Your City" id="city-input">
+        <input type="text" placeholder="Enter Your State" id="state-input">
+        <i class="fa-brands fa-searchengin fa-3x" id="search-icon" ></i>
+    </div>
+    
+    <div id="main-weather-prv" class="">
+        <h1 id="weather-prv-heading">Your Location</h1>
+        <div id="weather-temp">
+            <div id="weather-animation" class="hidden-items"> </div>
+            <h1 id="temp-txt">Temperature</h1>
+        </div>
+
+        <div id="weather-details">
+            <div id="windspeed-txt" >
+                <h2>Wind Speed</h2>
+            </div>
+
+            <div id="humidity-txt">
+                <h2>Humidity</h2>
+            </div>
+
+            <div id="pressure-txt">
+                <h2>Pressure</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/73a7403ea5.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <script src="script.js"> </script>
+</body>
+</html>
