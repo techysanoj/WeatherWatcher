@@ -12,7 +12,7 @@ WeatherWatcher is a web app where users can check the weather for any city and s
 Try it out here: [WeatherWatcher Live Demo](https://weather-watcher-mauve.vercel.app)
 
 ## Screenshots
-![WeatherWatcher Screenshot](homeoage.png)
+![WeatherWatcher Screenshot](homepage.png)
 
 ## Usage
 
