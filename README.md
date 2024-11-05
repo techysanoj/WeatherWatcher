@@ -9,7 +9,7 @@ WeatherWatcher is a web app where users can check the weather for any city and s
 - ⚡ **Advanced JavaScript and OpenWeather API**: Utilizes advanced JavaScript for asynchronous API calls to the [OpenWeather API](https://openweathermap.org/). Weather data is fetched dynamically, including details like temperature, humidity, and weather conditions.
   
 ## Demo
-Try it out here: [WeatherWatcher Live Demo](https://weather-watcher-mauve.vercel.app)
+Try it out here: [WeatherWatcher Live Demo](https://weather-watcher-new.vercel.app/)
 
 ## Screenshots
 ![WeatherWatcher Screenshot](homepage.png)
